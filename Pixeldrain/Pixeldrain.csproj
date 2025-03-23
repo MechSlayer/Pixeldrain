@@ -3,6 +3,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <NoWarn>CS1591</NoWarn>
 
         <!-- Package metadata -->
         <PackageId>Pixeldrain</PackageId>
@@ -12,10 +13,10 @@
         <PackageTags>pixeldrain;api;file;upload;download</PackageTags>
         <RepositoryUrl>https://github.com/MechSlayer/Pixeldrain</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageReadmeFile>..\README.md</PackageReadmeFile>
+        <PackageReadmeFile>$(RepositoryDir)README.md</PackageReadmeFile>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/MechSlayer/Pixeldrain</PackageProjectUrl>
-        <PackageIcon>icon.png</PackageIcon>
+        <PackageIcon>$(RepositoryDir)icon.png</PackageIcon>
         <PackageIconUrl>https://raw.githubusercontent.com/MechSlayer/Pixeldrain/main/icon.png</PackageIconUrl>
         <Version>0.0.1</Version>
 
