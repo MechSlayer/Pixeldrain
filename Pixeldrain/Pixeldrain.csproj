@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- Package metadata -->
+        <PackageId>Pixeldrain</PackageId>
+        <Authors>MechSlayer</Authors>
+        <Title>Pixeldrain API</Title>
+        <Description>Pixeldrain API wrapper for .NET</Description>
+        <PackageTags>pixeldrain;api;file;upload;download</PackageTags>
+        <RepositoryUrl>https://github.com/MechSlayer/Pixeldrain</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>..\README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/MechSlayer/Pixeldrain</PackageProjectUrl>
+        <PackageIcon>icon.png</PackageIcon>
+        <PackageIconUrl>https://raw.githubusercontent.com/MechSlayer/Pixeldrain/main/icon.png</PackageIconUrl>
+        <Version>0.0.1</Version>
+
+        <!-- Build configuration -->
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\icon.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+</Project>
