@@ -161,7 +161,7 @@ public partial class FilesApi : ApiBase
         CancellationToken ct = default)
     {
         using var response =
-            await Client.GetAsync($"file/{id}", ct);
+            await Client.GetAsync($"file/{id}", HttpCompletionOption.ResponseHeadersRead, ct);
 
         await VerifyOrThrow(response, ct);
 

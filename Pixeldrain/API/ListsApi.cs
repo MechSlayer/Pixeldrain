@@ -52,11 +52,8 @@ public class ListsApi : ApiBase
     /// <exception cref="PixeldrainException">Thrown when the API request fails or the list doesn't exist.</exception>
     public async ValueTask<ListInfo> GetInfoAsync(string id, CancellationToken ct = default)
     {
-        using var response =
-            await Client.GetAsync($"list/{id}", ct);
 
-        var data = await DeserializeOrThrow<ListInfo>(response, ct);
-        return data;
+        return await SendGetAsync<ListInfo>($"list/{id}", ct);
     }
 
     /// <summary>

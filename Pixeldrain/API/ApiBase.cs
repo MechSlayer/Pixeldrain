@@ -84,7 +84,7 @@ public abstract class ApiBase
     protected async ValueTask<T> SendGetAsync<T>([StringSyntax("Uri")] string uri, CancellationToken ct = default)
     {
         using var response = 
-            await Client.GetAsync(uri, ct);
+            await Client.GetAsync(uri, HttpCompletionOption.ResponseHeadersRead, ct);
         
         var data = await DeserializeOrThrow<T>(response, ct);
         return data;
