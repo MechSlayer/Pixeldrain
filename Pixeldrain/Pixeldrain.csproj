@@ -18,7 +18,7 @@
         <PackageProjectUrl>https://github.com/MechSlayer/Pixeldrain</PackageProjectUrl>
         <PackageIcon>$(RepositoryDir)icon.png</PackageIcon>
         <PackageIconUrl>https://raw.githubusercontent.com/MechSlayer/Pixeldrain/main/icon.png</PackageIconUrl>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
 
         <!-- Build configuration -->
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
